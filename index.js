@@ -21,6 +21,6 @@ if (!vps || vps === '') {
 var transipInstance = new TransIP(userName, privateKey);
 
 // Lets first fetch the Haip
-transipInstance.vpsService.resetVps(vps).then(function (vpsResult) {
+transipInstance.vpsService.stopVps(vps).then(function (vpsResult) {
 	console.log('VPS ' + vps + ' was killed the hard way.');
 });
